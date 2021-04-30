@@ -161,7 +161,7 @@ request.onsuccess = function (event) {
 };
 
 request.onerror = function (event) {
-  console.error(event.target.result);
+  console.log(event.target.result);
 };
 
 function saveRecord(record) {

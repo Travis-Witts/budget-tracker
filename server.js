@@ -15,13 +15,7 @@ app.use(express.json());
 
 app.use(express.static(__dirname + '/public'));
 
-if (process.env.NODE_ENV === 'production') {
-  app.use(express.static('/public'))
-  app.get('*', (request, response) => {
-    response.sendFile(path.join(__dirname, '/public', 'index.html'));
-  });
-  
-}
+
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/budgetDB", {
   useNewUrlParser: true,
