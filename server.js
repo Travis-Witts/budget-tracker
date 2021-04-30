@@ -19,7 +19,7 @@ if (process.env.NODE_ENV === 'production') {
   app.use(express.static('/public'))
 }
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/budget", {
+mongoose.connect("mongodb://localhost/budgetDB", {
   useNewUrlParser: true,
   useFindAndModify: false
 });
