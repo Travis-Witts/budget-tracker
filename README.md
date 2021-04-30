@@ -3,9 +3,9 @@
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
   ## Description
-  This is an employee management system, that uses vanilla SQL to store, retrieve and manipulate data with queries.
+  This is an budget tracker web app, which uses heroku, mongoDB Atlas, and webpack to be a functional PWA.
 
-  Example of working product: [HERE](https://drive.google.com/file/d/1rNT_EMnnIj4IM1wq7671cssMVUoT2hJ3/view)
+  Example of working product: [HERE](https://intense-island-55474.herokuapp.com/)
 
     
   ## Table of Contents
@@ -18,7 +18,7 @@
   - [Questions](#Questions)
  
   ## Usage
-  To use this project, you must first download the files to your desktop. Next you must install required npm packages such as: inquirer, mysql, dotenv and console.table. Assuming everything is downloaded and your sql database is running you may seed it with the schema and seed provided. After it is prepared to run you type "node index.js" in the integrated terminal and it will run automatically.
+  This project is deployed on heroku, so you can access it from the link above or if you'd like to use locally you would need to download the repo and install all dependencies through npm.
 
   ## Installation
   To install you will need npm installed on a IDE compatiable with js.
