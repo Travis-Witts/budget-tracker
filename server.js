@@ -17,6 +17,10 @@ app.use(express.static(__dirname + '/public'));
 
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static('/public'))
+  app.get('*', (request, response) => {
+    response.sendFile(path.join(__dirname, '/public', 'index.html'));
+  });
+  
 }
 
 mongoose.connect("mongodb://localhost/budgetDB", {
@@ -24,9 +28,6 @@ mongoose.connect("mongodb://localhost/budgetDB", {
   useFindAndModify: false
 });
 
-app.get('*', (request, response) => {
-	response.sendFile(path.join(__dirname, '/public', 'index.html'));
-});
 
 // routes
 app.use(require("./routes/api.js"));
