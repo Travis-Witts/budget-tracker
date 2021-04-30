@@ -2,6 +2,7 @@ const WebpackPwaManifest = require('webpack-pwa-manifest');
 const path = require('path');
 
 const config = {
+  mode: "production",
     entry: {
       app: "./public/assets/js/index.js"
     },
@@ -9,7 +10,6 @@ const config = {
     path: __dirname + '/public/dist',
     filename: '[name].bundle.js',
   },
-  mode: 'production',
   module: {
     rules: [
       {
