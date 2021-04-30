@@ -5,7 +5,7 @@ const config = {
     entry: {
       app: "./public/assets/js/index.js",
       db: "./public/assets/js/db.js",
-      serviceWorker: "./public/assets/service-worker.js"
+      serviceWorker: "./public/service-worker.js"
     },
   output: {
     path: __dirname + '/public/dist',
@@ -39,7 +39,7 @@ const config = {
       icons: [{
         src: path.resolve("public/assets/icons/icon-192x192.png"),
         sizes: [192, 512],
-        destination: path.join("assets", "icons")
+        destination: path.join("public", "assets", "icons")
       }]
     })
   ],
