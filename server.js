@@ -15,9 +15,17 @@ app.use(express.json());
 
 app.use(express.static(__dirname + '/public' + '/dist'));
 
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static('client/build'))
+}
+
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/budget", {
   useNewUrlParser: true,
   useFindAndModify: false
+});
+
+app.get('*', (request, response) => {
+	response.sendFile(path.join(__dirname, 'client/build', 'index.html'));
 });
 
 // routes
