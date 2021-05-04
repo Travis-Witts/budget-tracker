@@ -17,7 +17,7 @@ app.use(express.static(__dirname + '/public'));
 
 
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/budgetDB", {
+mongoose.connect("mongodb+srv://travis-witts:Rosie1994@cluster0.flkz9.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", {
   useNewUrlParser: true,
   useFindAndModify: false
 });
