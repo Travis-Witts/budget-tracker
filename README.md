@@ -5,7 +5,7 @@
   ## Description
   This is an budget tracker web app, which uses heroku, mongoDB Atlas, and webpack to be a functional PWA.
 
-  Example of working product: [HERE](https://intense-island-55474.herokuapp.com/)
+  Example of working product: [HERE](https://damp-hamlet-63182.herokuapp.com/)
 
     
   ## Table of Contents
